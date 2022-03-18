@@ -1,6 +1,4 @@
-# Windows utils 
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
+# Windows utils <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
 
 This repo contains Windows utilities, configs and things to help me recreate my windows environment if needed
 Here is a list of some of the things I use and'll keep documenting as I go along:
