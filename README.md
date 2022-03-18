@@ -1,6 +1,7 @@
 # Windows utils <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" width="20" height="20"/>
 
 This repo contains Windows utilities, configs and things to help me recreate my windows environment if needed
+
 Here is a list of some of the things I use and'll keep documenting as I go along:
 
 1. Context menu for Vscode and Atom:
