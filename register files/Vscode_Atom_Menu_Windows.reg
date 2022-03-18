@@ -1,0 +1,102 @@
+Windows Registry Editor Version 5.00
+
+;|=========================================================================================|
+;| (1) DELETE BROKEN KEYS:                                                                 |
+;|   -> HKEY_CLASSES_ROOT\*\shell\                    || FOR FILE CONTEXT CLICKS           |
+;|   -> HKEY_CLASSES_ROOT\Directory\shell\            || FOR FOLDER CONTEXT CLICKS         |
+;|   -> HKEY_CLASSES_ROOT\Directory\Background\shell\ || FOR INSIDE FOLDER CONTEXT CLICKS  |
+;|                                                                                         |
+;| (2) EVERYTHING SHOULD WORK FINE IF YOU:                                                 |
+;|   -> CHANGE PROGRAM DIR ACCORDING TO YOURS                                              |
+;|   -> JUST FILL THE PROGRAM PATH EXACTLY INSIDE " " WHEN THEY'RE SHOWN                   |
+;|   -> PUT DOUBLE BACKSLASH WHEN IT'S SHOWN, AFTER DRIVE LETTER C: B: ETC, NOT IN THE END |
+;|   -> DON'T USE SINGLE BACKSLASH AFTER .exe, WHEN IT'S ABSENT                            |
+;|   -> KEEP FINAL SINGLE BACKSLASH AFTER .exe\ WHEN IT'S SHOWN                            |
+;|   -> RESTART YOUR PC                                                                    |
+;|                                                                                         |
+;| (3) IF SOMETHING DOESN'T WORK:                                                          |
+;|   -> GO TO (1) TO DELETE BROKEN KEYS LOOKING FOR THEIR NAMES                            |
+;|   -> RESTART YOUR PC AND TRY AGAIN                                                      |
+;|=========================================================================================|
+
+; VSCODE
+
+; Click on a FILE
+
+;   DESCRIPTION
+
+[HKEY_CLASSES_ROOT\*\shell\VSCode]
+@="Abrir com VSCode"
+"Icon"="B:\\ProgramFiles\\Visual Studio Code\\Code.exe,0"
+
+;   COMMAND
+
+[HKEY_CLASSES_ROOT\*\shell\VSCode\command]
+@="\"B:\\ProgramFiles\\Visual Studio Code\\Code.exe\" \"%1\""
+
+; Click on a FOLDER
+
+;   DESCRIPTION
+
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode]
+@="Abrir como projeto no VSCode"
+"Icon"="\"B:\\ProgramFiles\\Visual Studio Code\\Code.exe\",0"
+
+;   COMMAND
+
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]
+@="\"B:\\ProgramFiles\\Visual Studio Code\\Code.exe\" \"%1\""
+
+; Click INSIDE a folder
+
+;   DESCRIPTION
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
+@="Abrir aqui como projeto no VSCode"
+"Icon"="\"B:\\ProgramFiles\\Visual Studio Code\\Code.exe\",0"
+
+;   COMMAND
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]
+@="\"B:\\ProgramFiles\\Visual Studio Code\\Code.exe\" \"%V\""
+
+; ATOM
+
+; Click on a FILE
+
+;   DESCRIPTION
+
+[HKEY_CLASSES_ROOT\*\shell\Atom]
+@="Abrir com Atom"
+"Icon"="B:\\ProgramFiles\\atom\\atom.exe,0"
+
+;   COMMAND
+
+[HKEY_CLASSES_ROOT\*\shell\Atom\command]
+@="\"B:\\ProgramFiles\\atom\\atom.exe\" \"%1\""
+
+; Click on a FOLDER
+
+;   DESCRIPTION
+
+[HKEY_CLASSES_ROOT\Directory\shell\Atom]
+@="Abrir como projeto no Atom"
+"Icon"="\"B:\\ProgramFiles\\atom\\atom.exe\",0"
+
+;   COMMAND
+
+[HKEY_CLASSES_ROOT\Directory\shell\Atom\command]
+@="\"B:\\ProgramFiles\\atom\\atom.exe\" \"%1\""
+
+; Click INSIDE a folder
+
+;   DESCRIPTION
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Atom]
+@="Abrir aqui como projeto no Atom"
+"Icon"="\"B:\\ProgramFiles\\atom\\atom.exe\",0"
+
+;   COMMAND
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Atom\command]
+@="\"B:\\ProgramFiles\\atom\\atom.exe\" \"%V\""
