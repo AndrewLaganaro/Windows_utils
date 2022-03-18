@@ -1,6 +1,6 @@
 # Windows utils
 
-This repo contains Windows utilites, configs and things to help me recreate my windows environment if needed
+This repo contains Windows utilities, configs and things to help me recreate my windows environment if needed
 Here is a list of some of the things I use and'll keep documenting as I go along:
 
 1. Context menu for Vscode and Atom:
